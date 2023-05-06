@@ -2,6 +2,7 @@ body {
   background-image: url("./images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
 }
 
 .container {
@@ -56,4 +57,37 @@ header {
 
 .contacts a:first-child {
   margin-bottom: 13px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 65px;
+  justify-content: space-between;
+}
+
+.tour-card h2 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+footer {
+  padding: 15px 0;
+  margin-top: 15px;
+}
+
+.copyright {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: #ffffff;
 }
