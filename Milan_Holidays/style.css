@@ -21,6 +21,11 @@ header {
   display: flex;
   align-items: center;
   gap: 8px;
+  /* position: relative; */
+}
+
+.logo-container:hover .logo-text span {
+  color: #f26522;
 }
 
 .logo-text {
@@ -36,6 +41,7 @@ header {
   font-size: 29px;
   line-height: 29px;
   color: #ffffff;
+  transition: 0.5s;
 }
 
 .logo-text span:last-child {
@@ -43,6 +49,34 @@ header {
   line-height: 18px;
 }
 
+/* .logo-img-hover {
+  display: none;
+}
+
+.logo-container:hover .logo-img-hover {
+  display: inline-block;
+}
+.logo-container:hover .logo-img {
+  display: none;
+} */
+
+.logo-img {
+  transition: 0.5s;
+}
+
+.logo-img-hover {
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.logo-container:hover .logo-img-hover {
+  opacity: 1;
+}
+
+.logo-container:hover .logo-img {
+  opacity: 0;
+}
 .contacts a {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -53,10 +87,15 @@ header {
   text-decoration: none;
   display: block;
   text-align: right;
+  transition: 0.5s;
 }
 
 .contacts a:first-child {
   margin-bottom: 13px;
+}
+
+.contacts a:hover {
+  color: #f26522;
 }
 
 main {
@@ -75,6 +114,11 @@ main {
   text-align: center;
   color: #ffffff;
   margin-top: 20px;
+  transition: 0.5s;
+}
+
+.tour-card:hover h2{
+  color: #f26522;
 }
 
 footer {
