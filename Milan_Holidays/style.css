@@ -117,8 +117,59 @@ main {
   transition: 0.5s;
 }
 
-.tour-card:hover h2{
+.tour-card:hover h2 {
   color: #f26522;
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.tour-card:hover .tour-price-container {
+  bottom: 0;
+}
+
+.tour-price-container {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  background: #f26522;
+  padding: 30px 16px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  right: 0;
+  transition: 0.5s;
+}
+
+.tour-price {
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.tour-price::before {
+  content: "from";
+  font-size: 10px;
+  line-height: 10px;
+  position: absolute;
+  top: 10px;
+}
+
+.tour-details {
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.tour-details::after {
+  content: url("./images/logos/arrow.svg");
+  padding-left: 10px;
 }
 
 footer {
