@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+
+body {
+  background-image: url("./images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px 10px;
+}
+
+header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.logo:hover {
+  color: #3cb878;
+}
+
+.header-link-item {
+  margin-right: 25px;
+  text-decoration: none;
+}
+
+.header-links-logos,
+.header-links {
+  display: flex;
+  align-items: center;
+}
+
+.header-links-logos::after {
+  content: "";
+  width: 1px;
+  height: 19px;
+  background: rgba(255, 255, 255, 0.9);
+  opacity: 0.5;
+  display: inline-block;
+}
+
+.header-reg {
+  margin-left: 25px;
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+}
+
+.header-reg > a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+.header-reg > a:hover {
+  color: #3cb878;
+}
