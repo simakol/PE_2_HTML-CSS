@@ -4,6 +4,7 @@ body {
   background-image: url("./images/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
 }
 
 .container {
@@ -42,6 +43,12 @@ header > .container {
   margin-right: 25px;
   text-decoration: none;
 }
+.header-link-item > svg > path {
+  transition: 0.5s;
+}
+.header-link-item:hover > svg > path {
+  fill: #3cb878;
+}
 
 .header-links-logos,
 .header-links {
@@ -76,4 +83,79 @@ header > .container {
 
 .header-reg > a:hover {
   color: #3cb878;
+}
+
+main.container {
+  text-align: center;
+}
+
+.main-form-wrapper {
+  margin-top: 100px;
+  background: #ffffff;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.52);
+  padding: 35px 40px;
+  display: inline-block;
+  position: relative;
+}
+
+.main-form-wrapper > h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #434343;
+  text-align: left;
+}
+
+.main-form-wrapper > h2::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background: #3cb878;
+  position: absolute;
+  left: 0;
+}
+.button-wrapper {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+.button-wrapper > button {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+  padding: 15px 25px;
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+
+.button-wrapper > button > img {
+  margin-right: 30px;
+}
+
+.button-wrapper > .facebook {
+  background: #305db8;
+}
+.button-wrapper > .google {
+  background: #df4a32;
+}
+
+.button-wrapper > button:hover {
+  cursor: pointer;
+}
+
+.button-wrapper > .facebook:hover {
+  background: #022263;
+}
+.button-wrapper > .google:hover {
+  background: #ab1f09;
 }
