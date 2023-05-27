@@ -281,10 +281,16 @@ header {
   text-align: center;
 }
 
-.requirements-table,
-.requirements-table tr,
-.requirements-table td {
+/* .requirements-table, */
+/* .requirements-table tr, */
+.requirements-table tr:not(:last-child) td {
   border: 1px solid #979797;
+}
+
+.requirements-table {
+  background-image: url("images/table.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .requirements-table {
@@ -294,7 +300,8 @@ header {
   font-size: 18px;
   line-height: 22px;
   color: #ffffff;
-  max-width: 600px;
+  width: 570px;
+  height: 450px;
   margin-top: 140px;
 }
 
