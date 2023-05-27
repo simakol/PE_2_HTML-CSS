@@ -1,63 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>SOS</title>
-    <link rel="shortcut icon" href="images/logos/logo.svg" type="image/svg">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="shortcut icon" href="images/logos/logo.svg" type="image/svg" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="hero-bg bg-img">
-        <div class="shadow">
-            <div class="container">
-                <header>
-                    <a href="#"><img src="images/logos/logo.svg" alt="sos"></a>
+      <div class="shadow">
+        <div class="container">
+          <header>
+            <a href="#"><img src="images/logos/logo.svg" alt="sos" /></a>
 
-                    <nav class="navbar-menu">
-                        <a href="#">MAIN</a>
-                        <a href="#">about</a>
-                        <a href="#">game features</a>
-                        <a href="#">System requirements</a>
-                        <a href="#">quotes</a>
-                    </nav>
+            <nav class="navbar-menu">
+              <a href="#">MAIN</a>
+              <a href="#">about</a>
+              <a href="#">game features</a>
+              <a href="#requirements">System requirements</a>
+              <a href="#quotes">quotes</a>
+            </nav>
 
-                    <div class="header-links">
-                        <a href="#"><img src="images/logos/xbox.svg" alt="xbox"></a>
-                        <a href="#"><img src="images/logos/steam.svg" alt="steam"></a>
-                    </div>
-                </header>
-
-                <section class="hero-section">
-                    <h1>SURVIVE AT ALL COSTS</h1>
-                    <h2>Experience new social battle royale game</h2>
-                    <a href="#" class="hero-btn btn-hover">Buy Now on Steam</a>
-                    <a href="#subscribe" class="hero-down-link">The story <img src="images/logos/arrow-down.svg"
-                            alt="arrow down"></a>
-                </section>
+            <div class="header-links">
+              <a href="#"><img src="images/logos/xbox.svg" alt="xbox" /></a>
+              <a href="#"><img src="images/logos/steam.svg" alt="steam" /></a>
             </div>
+          </header>
 
+          <section class="hero-section">
+            <h1>SURVIVE AT ALL COSTS</h1>
+            <h2>Experience new social battle royale game</h2>
+            <a href="#" class="hero-btn btn-hover">Buy Now on Steam</a>
+            <a href="#subscribe" class="hero-down-link"
+              >The story
+              <img src="images/logos/arrow-down.svg" alt="arrow down"
+            /></a>
+          </section>
         </div>
+      </div>
     </div>
     <section class="subscribe-section section bg-img" id="subscribe">
-        <div class="container">
-            <img src="images/skull.png" alt="skull">
-            <div class="subscribe-wrapper">
-                <h2 class="section-title">newsletter SUBSCRIBE</h2>
-                <p class="section-text">In order to start receiving our news, all you have to do is enter your email
-                    address. Everything else
-                    will be taken care of by us. We will send you emails containing information about game. We don’t
-                    spam.</p>
+      <div class="container">
+        <img src="images/skull.png" alt="skull" />
+        <div class="subscribe-wrapper">
+          <h2 class="section-title">newsletter SUBSCRIBE</h2>
+          <p class="section-text">
+            In order to start receiving our news, all you have to do is enter
+            your email address. Everything else will be taken care of by us. We
+            will send you emails containing information about game. We don’t
+            spam.
+          </p>
 
-                <form class="subscribe-form">
-                    <input type="email" required placeholder="Your email address">
-                    <input type="submit" value="Subscribe now" class="btn-hover">
-                </form>
-            </div>
+          <form class="subscribe-form">
+            <label class="email-label">
+              <input type="email" required />
+              <p class="email-placeholder">Your email address</p>
+            </label>
+            <input type="submit" value="Subscribe now" class="btn-hover" />
+          </form>
         </div>
+      </div>
     </section>
-</body>
+    <section class="requirements-section section bg-img" id="requirements">
+      <div class="container">
+        <h2 class="section-title">system requirements</h2>
 
+        <table class="requirements-table">
+          <tbody>
+            <tr>
+              <td>
+                <h3>os:</h3>
+                <p>Windows 7 64-bit only (No OSX support at this time)</p>
+              </td>
+              <td>
+                <h3>pROCESSOR:</h3>
+                <p>Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3>mEMORY:</h3>
+                <p>8 GB RAM</p>
+              </td>
+              <td>
+                <h3>storage:</h3>
+                <p>8 GB available space</p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <h3>GRAPHICS:</h3>
+                <p>
+                  NVIDIA GeForce GTX 660 2GB or AMD Radeon HD 7850 2GB DirectX11
+                  (Shader Model 5)
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="quotes-section section bg-img" id="quotes">
+      <div class="container">
+        <div class="quotes-text">
+          <h2 class="section-title">Press quotes</h2>
+          <p class="section-text">
+            Our goal is to create a product and service that you’re satisfied
+            with and use it every day. This is why we’re constantly working on
+            our services to make it better every day and really listen to what
+            our users has to say.
+          </p>
+          <a href="#" class="btn-hover quotes-btn">Read more testimonials</a>
+        </div>
+        <div class="quotes-cards">
+          <div class="quotes-card-item">
+            <div class="quotes-card-top">
+              <div class="quotes-card-profile-name">
+                <div class="progile-img">
+                  <img src="images/profiles/profile-1.png" alt="person" />
+                </div>
+                <div class="profile-name">
+                  <h4>Evan Lahti</h4>
+                  <h5>PC Gamer</h5>
+                </div>
+              </div>
+              <img src="images/logos/twitter.svg" alt="twitter" />
+            </div>
+            <div class="quotes-card-bottom">
+              <q>“One of my gaming highlights of the year.”</q>
+              <p>October 18, 2018</p>
+            </div>
+          </div>
+
+          <div class="quotes-card-item">
+            <div class="quotes-card-top">
+              <div class="quotes-card-profile-name">
+                <div class="progile-img">
+                  <img src="images/profiles/profile-2.png" alt="person" />
+                </div>
+                <div class="profile-name">
+                  <h4>Jada Griffin</h4>
+                  <h5>Nerdreactor</h5>
+                </div>
+              </div>
+              <img src="images/logos/twitter.svg" alt="twitter" />
+            </div>
+            <div class="quotes-card-bottom">
+              <q
+                >“The next big thing in the world of streaming and survival
+                games.”
+              </q>
+              <p>December 21, 2018</p>
+            </div>
+          </div>
+
+          <div class="quotes-card-item">
+            <div class="quotes-card-top">
+              <div class="quotes-card-profile-name">
+                <div class="progile-img">
+                  <img src="images/profiles/profile-3.png" alt="person" />
+                </div>
+                <div class="profile-name">
+                  <h4>Aaron Williams</h4>
+                  <h5>Uproxx</h5>
+                </div>
+              </div>
+              <img src="images/logos/twitter.svg" alt="twitter" />
+            </div>
+            <div class="quotes-card-bottom">
+              <q
+                >“Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is
+                Ridiculous.”</q
+              >
+              <p>December 24, 2018</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="last-bg bg-img">
+      <section class="gallery-section section" id="gallery">
+        <div class="container">
+          <div class="gallery-text">
+            <h2 class="section-title">
+              social battle <br />
+              royale game
+            </h2>
+            <p class="section-text">
+              Each round, <b>you</b> and <b>15</b> other contestants compete to
+              escape a deadly island filled with monsters. The trick is:
+              <b>three</b> people can survive. Will you run solo or form
+              friendships with others to escape?
+              <br />
+              <br />
+              Making the right decisions could be the difference between
+              <span class="text-underline">life and death</span>.
+            </p>
+          </div>
+          <div class="gallery">
+            <img src="images/gallery-image.png" alt="game screen" />
+            <img src="images/gallery-image-2.png" alt="game screen" />
+            <img src="images/gallery-image-3.png" alt="game screen" />
+          </div>
+        </div>
+      </section>
+      <footer class="container">
+        <div class="footer-top">
+          <a href="#" class="footer-logo"
+            ><img src="images/logos/logo.svg" alt="sos"
+          /></a>
+
+          <nav class="navbar-menu">
+            <a href="#">MAIN</a>
+            <a href="#">about</a>
+            <a href="#">game features</a>
+            <a href="#requirements">System requirements</a>
+            <a href="#quotes">quotes</a>
+          </nav>
+
+          <div class="footer-socials">
+            <a href="#"
+              ><img src="images/logos/facebook.svg" alt="facebook"
+            /></a>
+            <a href="#"
+              ><img src="images/logos/twitter-footer.svg" alt="twitter"
+            /></a>
+            <a href="#"><img src="images/logos/youtube.svg" alt="youtube" /></a>
+            <a href="#"><img src="images/logos/twitch.svg" alt="twitch" /></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Services</a> |
+            <a href="#">Code of Conduct</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

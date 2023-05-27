@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600;700;800&display=swap");
 
 ::selection {
   color: #1a1917;
@@ -14,9 +14,14 @@ a {
   display: inline-block;
 }
 
+b {
+  font-weight: bold;
+}
+
 .bg-img {
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .section {
@@ -218,7 +223,7 @@ header {
   justify-content: space-between;
 }
 
-.subscribe-form > input[type="email"] {
+.subscribe-form input[type="email"] {
   outline: none;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -230,18 +235,319 @@ header {
   background: rgba(255, 255, 255, 0.08);
   border-radius: 5px;
   border: none;
-  width: 55%;
+  width: 150%;
 }
-.subscribe-form > input[type="email"]::placeholder {
+.email-label {
+  position: relative;
+}
+
+.email-placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  color: #8d8e8f;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  user-select: none;
+  transition: 0.5s;
+}
+
+.subscribe-form input[type="email"]:focus ~ .email-placeholder,
+.subscribe-form input[type="email"]:not(:focus):valid ~ .email-placeholder {
+  top: -8px;
+  transform: translateY(0);
+  font-size: 14px;
+}
+
+.subscribe-form input[type="submit"] {
+  padding: 20px 70px;
+}
+
+.requirements-section {
+  background-image: url("images/backgrounds/requirements-background.png");
+  background-position: 0 -10px;
+  padding-top: 10vh;
+}
+
+.requirements-section h2::before {
+  content: "Can My Computer Run this game?";
+}
+
+.requirements-section .section-title {
+  text-align: center;
+}
+
+.requirements-table,
+.requirements-table tr,
+.requirements-table td {
+  border: 1px solid #979797;
+}
+
+.requirements-table {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  max-width: 600px;
+  margin-top: 140px;
+}
+
+.requirements-table td {
+  padding: 10px 20px;
+}
+.requirements-table td h3 {
+  text-transform: uppercase;
+  font-family: "Bebas Neue", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  color: #ffb548;
+  margin-bottom: 10px;
+}
+
+.quotes-section {
+  background-image: url("images/backgrounds/quotes-background.png");
+  padding-top: 8vh;
+}
+
+.quotes-section h2::before {
+  content: "What people think?";
+}
+.quotes-section > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quotes-btn {
+  padding: 20px 30px;
+  margin-top: 35px;
+}
+
+.quotes-text {
+  width: 40%;
+}
+
+.quotes-card-item {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 15px 20px;
+  max-width: 460px;
+}
+
+.quotes-card-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.quotes-card-item:nth-child(2) {
+  transform: translateX(-120px);
+}
+
+.quotes-card-item:nth-child(3) {
+  transform: translateX(-30px);
+}
+
+.quotes-card-profile-name {
+  display: flex;
+  gap: 20px;
+}
+
+.progile-img > img {
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+}
+
+.progile-img,
+.progile-img > img {
+  position: relative;
+  z-index: 1;
+}
+
+.progile-img::before {
+  content: "";
+  width: 65px;
+  height: 65px;
+  background: #ffb548;
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+  right: -3px;
+  bottom: -3px;
+}
+
+.quotes-card-top {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.profile-name > h4 {
+  font-family: "Bebas Neue", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  color: #ffb548;
+}
+
+.profile-name > h5 {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.quotes-card-bottom {
+  margin-top: 20px;
+}
+.quotes-card-bottom > q {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+.quotes-card-bottom > p {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
-  color: #8d8e8f;
-  border-radius: 4px;
+  color: #ffffff;
+  opacity: 0.5;
+  margin-top: 10px;
 }
 
-.subscribe-form > input[type="submit"] {
-  padding: 20px 70px;
+.last-bg {
+  background-image: url("images/backgrounds/gallery-background.png");
+  padding-top: 8vh;
+  background-position: 0 -10px;
+}
+
+.gallery-text h2::before {
+  content: "What is SOS?";
+}
+
+.gallery-text {
+  width: 50%;
+  padding-top: 50px;
+}
+
+.gallery {
+  position: relative;
+  left: -45%;
+}
+
+.gallery-section img {
+  border-radius: 15px;
+  width: 502px;
+  height: 610px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.gallery-section img:first-child {
+  z-index: 3;
+}
+.gallery-section img:nth-child(2) {
+  z-index: 2;
+  left: 50px;
+  transform: scale(0.9);
+}
+.gallery-section img:nth-child(3) {
+  z-index: 1;
+  left: 100px;
+  transform: scale(0.8);
+}
+
+.gallery-section > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.text-underline {
+  position: relative;
+}
+
+.text-underline::after {
+  content: "";
+  background: #ffb548;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.gallery-text > .section-title {
+  position: relative;
+}
+
+.gallery-text > .section-title::after {
+  content: "";
+  background: #ffffff;
+  border-radius: 4px;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  right: -200px;
+  left: 0;
+  z-index: 4;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 60px;
+}
+
+.footer-logo > img {
+  width: 90px;
+  height: 90px;
+}
+
+.footer-bottom {
+  padding-top: 25px;
+  padding-bottom: 45px;
+}
+
+.footer-bottom p {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: right;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-bottom p a {
+  color: #fff;
 }
